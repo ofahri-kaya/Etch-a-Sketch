@@ -7,7 +7,14 @@
 
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
+}
+
+.title, .footer {
+    flex: 0 0 auto;
 }
 
 .title {
@@ -15,12 +22,10 @@ body {
     background-color: rgb(0, 0, 0);
     font-weight: 600;
     font-size: 64px;
-    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 160px;
-    margin-bottom: 92.5px;
 }
 
 .footer {
@@ -31,15 +36,17 @@ body {
     align-items: center;
     justify-content: center;
     height: 90px;
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
 }
 
 .main-segment {
+    flex: 1 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 90px;
 }
 
 .grid-container {
@@ -48,7 +55,6 @@ body {
     border-width: 1px;
     border-style: solid;
     border-color: white;
-    margin-bottom: 30px;
 }
 
 .grid-row {
@@ -70,7 +76,7 @@ body {
     background-color: #000000;
     color: white;
     padding: 20px;
-    border: 1px solid white;
+    border: 1px solid whitesmoke;
     border-radius: 30px;
     margin-right: 20px;
 }
